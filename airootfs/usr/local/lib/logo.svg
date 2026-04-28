@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="#000000"/>
+
+  <!-- Letter Z -->
+  <path d="
+    M 120 120
+    H 392
+    L 160 392
+    H 392
+    "
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="48"
+    stroke-linecap="square"
+    stroke-linejoin="miter"
+  />
+
+</svg>

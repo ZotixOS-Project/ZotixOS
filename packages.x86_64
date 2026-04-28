@@ -1,0 +1,41 @@
+# CORE
+base
+linux
+linux-firmware
+grub
+efibootmgr
+networkmanager
+sudo
+bash
+zsh
+iptables
+reflector
+
+
+# DESKTOP
+btrfs-progs
+snapper
+grub-btrfs
+inotify-tools
+
+# UI
+plasma
+sddm
+calamares
+discover
+
+# AUDIO
+pipewire
+pipewire-pulse
+wireplumber
+
+# APPS
+firefox
+alacritty
+nano
+nemo
+gedit
+gnome-calculator
+vlc
+gwenview
+audacious
