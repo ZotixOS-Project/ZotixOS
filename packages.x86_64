@@ -2,6 +2,7 @@
 base
 linux
 linux-firmware
+linux-headers
 grub
 efibootmgr
 networkmanager
@@ -10,6 +11,7 @@ bash
 zsh
 iptables
 reflector
+mkinitcpio
 
 
 # DESKTOP
