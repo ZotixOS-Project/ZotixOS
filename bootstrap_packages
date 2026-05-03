@@ -1,4 +1,9 @@
 base
-base-devel
+linux
+linux-firmware
 bash
 glibc
+systemd
+mkinitcpio
+util-linux
+e2fsprogs
