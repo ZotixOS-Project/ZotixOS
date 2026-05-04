@@ -20,14 +20,22 @@ bootstrap_tarball_compression=('zstd' '-c' '-T0' '--auto-threads=logical' '--lon
 customize_airootfs() {
   echo "[ZotixOS] Enabling services..."
 
-  arch-chroot "${airootfs_dir}" systemctl enable sddm.service
-  arch-chroot "${airootfs_dir}" systemctl enable NetworkManager.service
+  systemctl enable sddm.service
+  systemctl enable NetworkManager.service
 
   echo "[ZotixOS] Creating live user..."
 
-  arch-chroot "${airootfs_dir}" useradd -m -G wheel,audio,video -s /bin/bash liveuser
+  useradd -m -G wheel,audio,video -s /bin/bash liveuser
 
-  echo "liveuser:live" | arch-chroot "${airootfs_dir}" chpasswd
+  echo "liveuser:live" | chpasswd
 
-  arch-chroot "${airootfs_dir}" passwd -d root
+  passwd -l root
+
+  echo "[ZotixOS] Configuring sudo..."
+  echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
+  chmod 440 /etc/sudoers.d/wheel
+
+  echo "[ZotixOS] Configuring root..."
+
+
 }
