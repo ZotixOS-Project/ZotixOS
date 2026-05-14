@@ -31,7 +31,6 @@ customize_airootfs() {
 
   echo "liveuser:live" | chpasswd
 
-  passwd -l root
 
   echo "[ZotixOS] Configuring sudo..."
   echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
