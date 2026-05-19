@@ -36,7 +36,4 @@ customize_airootfs() {
   echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
   chmod 440 /etc/sudoers.d/wheel
 
-  echo "[ZotixOS] Configuring root..."
-
-
 }

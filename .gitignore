@@ -1,6 +1,6 @@
-ISO/
 efiboot/
 grub/
 .venv/
 work/
 out/
+syslinux/
